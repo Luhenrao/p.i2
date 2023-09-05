@@ -23,7 +23,8 @@
     <span>direita</span>
 </aside>
 
-<section>
+<section class="centt">
+    Taxa de evasão escolar
     <span id="chartdiv">
 
     </span>
@@ -87,28 +88,28 @@
     var data = [
       {
         year: "2016",
-        income: 23.5,
-        expenses: 21.1
+        Evasão: 23.5,
+        Previsão: 21.1
       },
       {
         year: "2017",
-        income: 26.2,
-        expenses: 30.5
+        Evasão: 26.2,
+        Previsão: 30.5
       },
       {
         year: "2018",
-        income: 30.1,
-        expenses: 34.9
+        Evasão: 30.1,
+        Previsão: 34.9
       },
       {
         year: "2019",
-        income: 29.5,
-        expenses: 31.1
+        Evasão: 29.5,
+        Previsão: 31.1
       },
       {
         year: "2020",
-        income: 30.6,
-        expenses: 28.2,
+        Evasão: 30.6,
+        Previsão: 28.2,
         strokeSettings: {
           stroke: chart.get("colors").getIndex(1),
           strokeWidth: 3,
@@ -117,8 +118,8 @@
       },
       {
         year: "2021",
-        income: 34.1,
-        expenses: 32.9,
+        Evasão: 34.1,
+        Previsão: 32.9,
         columnSettings: {
           strokeWidth: 1,
           strokeDasharray: [5],
@@ -160,10 +161,10 @@
     
     var series1 = chart.series.push(
       am5xy.ColumnSeries.new(root, {
-        name: "Income",
+        name: "Evasão",
         xAxis: xAxis,
         yAxis: yAxis,
-        valueYField: "income",
+        valueYField: "Evasão",
         categoryXField: "year",
         tooltip: am5.Tooltip.new(root, {
           pointerOrientation: "horizontal",
@@ -181,10 +182,10 @@
     
     var series2 = chart.series.push(
       am5xy.LineSeries.new(root, {
-        name: "Expenses",
+        name: "Previsão",
         xAxis: xAxis,
         yAxis: yAxis,
-        valueYField: "expenses",
+        valueYField: "Previsão",
         categoryXField: "year",
         tooltip: am5.Tooltip.new(root, {
           pointerOrientation: "horizontal",
