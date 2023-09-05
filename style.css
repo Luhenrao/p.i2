@@ -1,5 +1,5 @@
 body{ 
-    background-color: white;
+    background-color: #c5c4c4;
     width: 1360px;
 
     margin: auto;
@@ -24,17 +24,20 @@ justify-content: center;
 align-items: center;
 }
 nav{
-height: 250px;
-width: 425px;
+height: 500px;
+width: 160px;
 margin-top: 15px;
-margin-left: 7%;
-margin-right: 7%;
+margin-left: 11%;
+margin-right: 0%;
 margin-bottom: 15px;
 float: left;
-background-color: gray;
+background-color: #b4bdd3;
+justify-items: center;
+justify-content: center;
+text-align: center;
 }
 
-aside{
+//ide{
     background-color: gray;
     height: 250px;
     width: 425px;
@@ -48,7 +51,7 @@ aside{
 
 section{
     height: 500px;
-    width: 660px;
+    width: 800px;
     margin-top: 15px;
     margin-left: 25px;
     margin-right: 15px;
@@ -68,9 +71,31 @@ footer{
 }
 
 .centt{
-
+    justify-content: center;
     text-align: center;
-    font-size: large;
+    align-items: center;
+    font-size: x-large;
     font-weight: bold;
+}
+
+.bold{
+font-weight: bold;
+font-size: large;
+}
+
+.regi{
+border-radius: 70%%;
+align-items: center;
+justify-content: center;
+justify-items: center;
+text-align: center;
+flex-direction: column;
+margin-top: 50px;
+font-size: medium;
+}
+
+.right{
+margin-right: 15px;
 
 }
+
